@@ -4,12 +4,12 @@ function getMarker(time) {
     "" + today.getFullYear() + (today.getMonth() + 1) + today.getDate() + time
   );
 }
-//Changes military time to standard time essentially
+//Returns the remainder of hours, military to standard timing
 function getFormattedHours(hours) {
   if (hours >= 12) return hours == 12 ? "12 PM" : (hours % 12) + " PM";
   else return hours + " AM";
 }
-//
+
 window.onload = function () {
   document.querySelector("#currentDay").innerText = new moment().format(
     "dddd MMMM Do YYYY"
@@ -37,6 +37,7 @@ window.onload = function () {
     if (time > hours) item.classList.add("future");
     item.value = localStorage.getItem(getMarker(time));
   });
+  //Saves input to local storage
   document.querySelectorAll("button").forEach(function (item) {
     let time = item.getAttribute("data-time");
     item.addEventListener("click", function () {
