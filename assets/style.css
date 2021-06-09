@@ -1,131 +1,107 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  }
-  
-  textarea {
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
-  .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    border-radius: 0;
-    border-bottom: 10px solid black;
-  }
-  
-  .description {
-    white-space: pre-wrap;
-  }
-  
-  .time-block {
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;
-  }
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  }
-  
-  .past {
-    background-color: #d3d3d3;
-    color: black;
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .future {
-    background-color: #77dd77;
-    color: white;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06aed5;
-    color: black;
-  }
-  
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-  }
-  
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
 
+h2 {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  padding: 1em 1.6em;
+  margin: 0;
+  line-height: 100%;
+  height: 1.6em;
+}
 
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
 
-  body {
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-  }
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
 
-  h2 {
-    position: fixed;
-    background: rgba(255, 255, 255, 0.85);
-    width: 100%;
-    padding: 1em 1.6em;
-    margin: 0;
-    line-height: 100%;
-    height: 1.6em;
-  }
+.description {
+  white-space: pre-wrap;
+}
 
-  .line-entries {
-    padding-top: 6em;
-  }
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
 
-  .line-entry label {
-    white-space: pre;
-    display: flex;
-  }
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
 
-  .line-entry label span {
-    display: block;
-    padding: 0.4em 0.6em;
-    width: 6em;
-  }
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
 
-  textarea {
-    width: 100%;
-    resize: vertical;
-    height: 6em;
-    font-size: 1em;
-    border: 1px solid #666;
-    transition: all 0.3s ease;
-  }
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: black;
+}
 
-  textarea:focus {
-    border-color: #222;
-    outline: none;
-    color: black;
-  }
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
 
-  .present {
-    background: #ff6666;
-  }
+.present {
+  background: #ff6666;
+}
 
-  .past {
-    background: lightgray;
-  }
+.past {
+  background: lightgray;
+}
 
-  .future {
-    background: lightgreen;
-  }
+.future {
+  background: lightgreen;
+}
+
+.line-entries {
+  padding-top: 6em;
+}
+
+.line-entry label {
+  white-space: pre;
+  display: flex;
+}
+
+.line-entry label span {
+  display: block;
+  padding: 0.4em 0.6em;
+  width: 6em;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  height: 6em;
+  font-size: 1em;
+  border: 1px solid #666;
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #222;
+  outline: none;
+  color: black;
+}

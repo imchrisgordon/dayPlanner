@@ -4,6 +4,7 @@ function getMarker(time) {
     "" + today.getFullYear() + (today.getMonth() + 1) + today.getDate() + time
   );
 }
+console.log(today)
 //Returns the remainder of hours, military to standard timing
 function getFormattedHours(hours) {
   if (hours >= 12) return hours == 12 ? "12 PM" : (hours % 12) + " PM";
@@ -28,6 +29,9 @@ window.onload = function () {
       item +
       '" type="button"><i class="far fa-save fa-lg"></i></button></form>';
   });
+  console.log(hours)
+  console.log(getFormattedHours)
+  
   document.querySelector("#lineEntries").innerHTML = lineEntry;
   document.querySelectorAll("textarea").forEach(function (item) {
     let time = item.getAttribute("data-time"),
